@@ -30,14 +30,23 @@
 // func();
 
 //let, const -> block 레벨 스코프
-function func() {
-    if (true) {
-        let a = 'a';
-        console.log(a);
-    }
-    console.log(a); // 안나옴 (블록 레벨이라서)
-}
+// function func() {
+//     if (true) {
+//         let a = 'a';
+//         console.log(a);
+//     }
+//     console.log(a); // 안나옴 (블록 레벨이라서)
+// }
+//
+// func()
 
-func()
+// console.log(greeting);
+// var greeting = 'hello';
+
+func();
+
+function func() {
+    console.log('hoisting');
+}
 
 
