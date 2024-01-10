@@ -25,4 +25,19 @@ console.log(numbersIterator.next()); //3
 console.log(numbersIterator.next()); //undefined, true
 
 
+function* sayNumbers() {
+    yield 1;
+    yield 2;
+    yield 3;
+}
+
+// 제너레이터 함수의 반환이 제너레이터 (*) 표시하기
+const number = sayNumbers();
+
+console.log(number.next());
+console.log(number.next());
+console.log(number.next());
+console.log(number.next());
+
+
 
